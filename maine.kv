@@ -1,0 +1,1385 @@
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+ScreenManagement:
+    transition: FadeTransition()
+    Home:
+    Bios:
+    BiosTwo:
+    BiosThree
+    picturesHome:
+    applyHere:
+    jonathonBio:
+    hanBio:
+    luisBio:
+    leoBio:
+    vidaBio:
+    cathyBio:
+    annieBio:
+    katBio:
+    appaBio:
+    steveBio:
+    alyBio:
+    mikaBio:
+    davidBio:
+    ianBio:
+    loukaBio:
+    wilburBio:
+    picTwo:
+    picThree:
+    applyTwo:
+    applyThree:
+
+<Home>:
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 1, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "one"
+    Label:
+        text: "YOIS"
+        pos_hint: {"right": 1, "top": 1.3}
+        color: 1, 1, 1, 1
+        font_size: 200
+        font_family: "Times"
+    Image:
+        source: "yoishome.jpg"
+        pos_hint: {"right": 0.65, "top": 0.7}
+        size_hint: 0.8, 0.3
+    Image:
+        source: "yoishome2.jpg"
+        pos_hint: {"right": 1.1, "top": 0.7}
+        size_hint: 0.8, 0.3
+    Button:
+        on_release: app.root.current = "two"
+        text: "Bios (work in progress)"
+        color: 0, 0, 0, 1
+        font_size: 50
+        size_hint: 0.7, 0.1
+        pos_hint: {"x":0.15, "top": 0.3}
+        background_normal: ''
+        background_color: 0.9, 1, 1.3, 1
+    Button:
+        on_release: app.root.current = "pics"
+        text: "Pictures"
+        color: 0, 0, 0, 1
+        font_size: 50
+        size_hint: 0.7, 0.1
+        pos_hint: {"x": 0.15, "top": 0.2}
+        background_normal: ''
+        background_color: 0.9, 1, 1.3, 1
+    Button:
+        on_release: app.root.current = "appHome"
+        text: "Application"
+        color: 0, 0, 0, 1
+        font_size: 50
+        size_hint: 0.7, 0.1
+        pos_hint: {"x": 0.15, "top": 0.1}
+        background_normal: ''
+        background_color: 0.9, 1, 1.3, 1
+
+<Bios>:
+    id:screenTwo
+    canvas.before:
+        Color:
+            rgba: 0.75, 0.3, 0.3, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "two"
+    FloatLayout:
+        Label:
+            text: "Bios - Page One"
+            color: 1, 1, 1, 1
+            font_size: 120
+            pos_hint:{"right": 1, "top": 1.4}
+        Button:
+            text: "Jonathon Tordilla"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint:{"right": 0.85, "top": 0.7}
+            on_release: app.root.current = "jonathonBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Jonathan Han"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.6}
+            on_release: app.root.current = "hanBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Luis Mendoza"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.5}
+            on_release: app.root.current = "luisBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Leo Price"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.4}
+            on_release: app.root.current = "leoBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Vida Daryabary"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.3}
+            on_release: app.root.current = "vidaBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            color: 1, 1, 1, 1
+            font_size: 40
+            on_release: app.root.current = "one"
+            background_normal: ''
+            background_color: 1, 0.5, 0.5, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Next"
+            font_size: 40
+            color: 1, 1, 1, 1
+            on_release: app.root.current = "three"
+            background_normal: ''
+            background_color: 1, 0.5, 0.5, 1
+
+        touchInput:
+            id: touchinput
+
+<BiosTwo>:
+    id:screenThree
+    canvas.before:
+        Color:
+            rgba: 0.75, 0.3, 0.3, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "three"
+    FloatLayout:
+        Label:
+            text: "Bios - Page Two"
+            color: 1, 1, 1, 1
+            font_size: 120
+            pos_hint:{"right": 1, "top": 1.4}
+        Button:
+            text: "Catherine Zhu"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint:{"right": 0.85, "top": 0.7}
+            on_release: app.root.current = "cathyBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Annika Van Zandt"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.6}
+            on_release: app.root.current = "annieBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Katherine Showalter"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.5}
+            on_release: app.root.current = "katBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Apolline Verdiell"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.4}
+            on_release: app.root.current = "appaBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Steve Daheb"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.3}
+            on_release: app.root.current = "steveBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+            background_normal: ''
+            background_color: 1, 0.5, 0.5, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Next"
+            font_size: 40
+            on_release: app.root.current = "lastBios"
+            background_normal: ''
+            background_color: 1, 0.5, 0.5, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.4, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "two"
+            background_normal: ''
+            background_color: 1, 0.5, 0.5, 1
+        touchInput:
+            id: touchinput
+<BiosThree>:
+    id:screenFour
+    canvas.before:
+        Color:
+            rgba: 0.75, 0.3, 0.3, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "lastBios"
+    FloatLayout:
+        Label:
+            text: "Bios - Page Three"
+            color: 1, 1, 1, 1
+            font_size: 120
+            pos_hint:{"right": 1, "top": 1.4}
+        Button:
+            text: "Alyssa Turenne"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint:{"right": 0.85, "top": 0.7}
+            on_release: app.root.current = "alyBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Mikayla Knestrick"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.6}
+            on_release: app.root.current = "mikaBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "David Barrera"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.5}
+            on_release: app.root.current = "davidBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Ian Smith"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.4}
+            on_release: app.root.current = "ianBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Loukas Triant"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.3}
+            on_release: app.root.current = "loukaBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            text: "Nolan Wilbur"
+            color: 0.8, 0.3, 0.3, 1
+            font_size: 50
+            size_hint: 0.7, 0.1
+            pos_hint: {"right": 0.85, "top": 0.2}
+            on_release: app.root.current = "wilburBio"
+            background_normal: ''
+            background_color: 1.1, 0.8, 0.8
+        Button:
+            size_hint: 0.15, 0.07
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+            background_normal: ''
+            background_color: 1, 0.5, 0.5, 1
+        Button:
+            size_hint: 0.15, 0.07
+            pos_hint: {"x": 0.85, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "three"
+            background_normal: ''
+            background_color: 1, 0.5, 0.5, 1
+        touchInput:
+            id: touchinput
+<picturesHome>:
+    id:picturesOne
+    canvas.before:
+        Color:
+            rgba: 0.4, 0.56, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "pics"
+    FloatLayout:
+        Label:
+            text: "Pictures"
+            color: 1, 1, 1, 1
+            font_size: 130
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "nerdsOne.jpg"
+            allow_stretch: True
+            size_hint: 0.5, 0.5
+            pos_hint: {"x": 0.01, "y": 0.4}
+        Image:
+            source: "nerdsTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.46, 0.46
+            pos_hint: {"x": 0.528, "y": 0.45}
+        Image:
+            source: "yoisOne.jpg"
+            allow_stretch: True
+            size_hint: 0.5, 0.5
+            pos_hint: {"x": 0.01, "y": 0.05}
+        Image:
+            source: "yoisTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.46, 0.46
+            pos_hint: {"x": 0.528, "y": 0.1}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Next"
+            font_size: 40
+            on_release: app.root.current = "picTwo"
+        touchInput:
+            id: touchinput
+
+<applyHere>:
+    id:applicationHome
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "appHome"
+    FloatLayout:
+        Label:
+            text: "How to Apply"
+            color: 1, 1, 1, 1
+            font_size: 80
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Label:
+            text: "So, you want to join the Y.O.Is. Maybe you're wondering what 'YOI' stands for.\nYou're not alone. Yeah. So anyways, look. There are a few reasons why you might be\ninterested in our group and basking in the incandescence of our utmost glory. Maybe you\ntalked to one of our (many) correspondents, referring you to our community. But most\nlikely, I talked to you in class, pulled out my phone, and told you to download this app.\n\nWhatever.\n\nSo the point is, you want to apply here. So let me explain the process in a few steps.\n\n1. If you were contacted by one of our correspondents, you will soon be informed of step 2.\n    However, if you weren't informed of this process prior to reading this article, then\n    contact one of our members for a recommendation. Once the council approves of his\n    or her decision, you may proceed to step 2.\n\n2. Okay, you're pretty much 'in' by now. So now, it's all up to you.\n    You can chose to be interviewed by your correspondent, or by me."
+            color: 0, 0, 0, 1
+            font_size: 36
+            pos_hint: {"right": 1.011, "y": 0.1}
+
+        Label:
+            text: "You're already 'in,' but the interview process is simply so I have enough information to\nadd you to the app (eventually), and to our amazing groupchat (that not everyone is on?)\n\nCongratulations! You're part of the YOIS now. Yeah, you might never learn what that\nstands for.\n\n(Click the 'next' button)"
+            color: 0, 0, 0, 1
+            font_size: 36
+            pos_hint: {"right": 1.018, "top": 0.744}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Next"
+            font_size: 40
+            on_release: app.root.current = "applyTwo"
+        touchInput:
+            id: touchinput
+
+<jonathonBio>:
+    id: jtbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "jonathonBio"
+    FloatLayout:
+        Label:
+            text: "Jonathon Tordilla"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+        Image:
+            source: "jonathonOne.jpg"
+            size_hint: 0.3, 0.3
+            pos_hint: {"right": 0.45, "top": 0.83}
+        Image:
+            source: "jonathonTwo.jpg"
+            size_hint: 0.3, 0.3
+            pos_hint: {"right": 0.8, "top": 0.83}
+        Label:
+            text: "Hi, I'm Jonathon, and this is my app for our friend group. Sorry if you're not in here,\nit's probably cause I already published the app before I met you or something.\nBut this page is supposed to be about me.\nSo anyways, I'm Jonathon, or JTor, and I really like coding and learning new things.\nHowever, music and art has always been a part of my life. I play the guitar, \npiano, and a little bit of the violin and ukelele, and I like to paint occasionally.\nTennis is my main sport, but I do the occasional\ndrama production once or twice a year. Well, that's enough about me. Feel free \nto check out the other bios I made. I know some of the bios seem way better \nthan others, (like David's) but that's probably cause I was too lazy to change the others.\nSorry if it seems like someone else got a better bio than you.\n(or if you don't have one...) It's probably cause I wasn't in my writing mood or\nsomething, and I'm sorry."
+            color: 0, 0, 0, 1
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.8}
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "two"
+
+        touchInput:
+            id: touchinput
+
+<hanBio>:
+    id: hanbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "hanBio"
+    FloatLayout:
+        Label:
+            text: "Jonathan Han"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "hanOne.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.5, "top": 0.83}
+        Image:
+            source: "hanTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.9, "top": 0.83}
+
+        Label:
+            text: "Jonathan Han is my best friend, and I've known him since sixth grade. I had\nalmost every single class with him in seventh and eighth grade, and we \nwould get in trouble for talking quite often. We're still referred to as\n'Jonathon Squared' as have practically the same first name. Han loves playing\n tennis, occasionally acting in plays, and playing Destiny on his PS4. He's great\nat art (much better than me) and is a great friend."
+            color: 0, 0, 0, 1
+            font_size: 40
+            pos_hint: {"right": 1, "top": 0.8}
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "two"
+
+        touchInput:
+            id: touchinput
+
+<luisBio>:
+    id: luisbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "luisBio"
+    FloatLayout:
+        Label:
+            text: "Luis Mendoza"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "luisOne.jpg"
+            allow_stretch: True
+            size_hint: 0.5, 0.4
+            pos_hint: {"right": 0.45, "top": 0.83}
+        Image:
+            source: "luisTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.55, 0.55
+            pos_hint: {"right": 0.96, "top": 0.905}
+
+        Label:
+            text: "Luis Mendoza is one of my closest friends and I’ve known him since sixth grade.\nHe’s great at soccer, is the fastest cuber that I know personally, and is skilled at\nsome of the most random things. He always has good advice and is more insightful\nthan most people I know."
+            color: 0, 0, 0, 1
+            font_size: 40
+            pos_hint: {"right": 1, "top": 0.8}
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "two"
+
+        touchInput:
+            id: touchinput
+
+<leoBio>:
+    id: leobio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "leoBio"
+    FloatLayout:
+        Label:
+            text: "Leo Price"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "leoOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.5, "top": 0.83}
+        Image:
+            source: "leoTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.8, "top": 0.83}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Label:
+            text: "Leo Price was the first person besides Ian who I talked to before coming to Sacred \nHeart. We were both in the jumpstart program, and we became fast friends.\nLeo likes playing golf and basketball, and he likes gaming on his laptop.\nHe also can play the guitar, piano, and violin. "
+            font_size: 40
+            pos_hint: {"right": 1, "top": 0.8}
+            color: 0, 0, 0, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "two"
+
+        touchInput:
+            id: touchinput
+
+<vidaBio>:
+    id: vdbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "vidaBio"
+    FloatLayout:
+        Label:
+            text: "Vida Daryabary"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "vidaOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.5, "top": 0.83}
+        Image:
+            source: "vidaTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.93, "top": 0.83}
+
+        Label:
+            text: "I first became friends with Vida in seventh grade Spanish class. Although\nwe didn’t talk much the following year, we started hanging out towards\n the end of the year. Vida’s one of my closest friends, and we’re both obsessed\nwith PJO. She’s one of the best artists I know, and she’s also great\nat volleyball. Vaya con queso!"
+            font_size: 40
+            pos_hint: {"right": 1, "top": 0.8}
+            color: 0, 0, 0, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "two"
+
+        touchInput:
+            id: touchinput
+
+<cathyBio>:
+    id: cathybio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "cathyBio"
+    FloatLayout:
+        Label:
+            text: "Catherine Zhu"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "cathyOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.5, "top": 0.83}
+        Image:
+            source: "cathyTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.93, "top": 0.83}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Label:
+            text: "Cathy Zee! I don’t really know why I used to constantly call you that in seventh grade.\nRemember when we had Helen as our third grade buddy in sixth grade? Yikes. I don’t\nthink she liked us very much…\nI’m glad you’re on the Robotics team, after all, you’re ANDREW’S SISTER. Keep \nplaying volleyball even if it means that I have to lose sleep working on a partner\npresentation. Just kidding!"
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.76}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "three"
+
+        touchInput:
+            id: touchinput
+
+<annieBio>:
+    id: anbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "annieBio"
+    FloatLayout:
+        Label:
+            text: "Annika Van Zandt"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "annieOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.48, "top": 0.83}
+        Image:
+            source: "annieTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.84, "top": 0.83}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Label:
+            text: "Hey, Annie. Sorry for saying this, but I’m not exactly sure how long we’ve been friends…?\nWas it when we did Superhero Ultraferno? Or during tennis season? Or was it before\nthat? I feel like a bad friend. I bet you could probably beat me at tennis pretty easily now. \nYou have a great singing voice, one of the best in our grade, and I think you could\ndefinitely get a lead role in the musical next year."
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.78}
+            color: 0, 0, 0, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "three"
+
+        touchInput:
+            id: touchinput
+
+<katBio>:
+    id: ksbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "katBio"
+    FloatLayout:
+        Label:
+            text: "Kat Showalter"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "katOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.51, "top": 0.83}
+        Image:
+            source: "katTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.82, "top": 0.83}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Label:
+            text: "Kat! You’re so full of energy, and I can always rely on you to yell at the underlings\non our robotics team. Whatever people say about you being a leader, don’t let it \nget to you. Honestly, I think they’re being really inconsiderate. Keep playing tennis,\nbecause I think I heard that you have a good kick serve. I can’t even do a kick serve.\nIt happens on accident for me."
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.83}
+            color: 0, 0, 0, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "three"
+
+        touchInput:
+            id: touchinput
+
+<appaBio>:
+    id: avbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "appaBio"
+    FloatLayout:
+        Label:
+            text: "Apolline Verdiell"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "appaOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.51, "top": 0.84}
+        Image:
+            source: "appaTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.82, "top": 0.84}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Label:
+            text: "Hallo Appa. It’s kinda strange how I didn’t know you the first week of school, and\nthen talked to you for the first time in Spanish class. We’ve officially adopted you\ninto our clan. I think it’s cool how you kinda speak four languages and are taking\nHip Hop dance classes. Thanks for introducing me to ‘Avatar’ and ‘Asterisk and Obelisk.’\nKeep learning python, because that’s what I wrote this app with.\n\nprint(‘goodbye for now Appa’)"
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.78}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "three"
+
+        touchInput:
+            id: touchinput
+
+<steveBio>:
+    id: sdbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "steveBio"
+    FloatLayout:
+        Label:
+            text: "Steve Daheb"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "steveOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.45, "top": 0.84}
+        Image:
+            source: "steveTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.89, "top": 0.84}
+
+        Label:
+            text: "STEVE. What's up man. You know what, I never thought I'd meet someone more crazed about\nNintendo than I was when I was ten years old. But you know what, I was wrong.\nWow. When you have your Mario Tennis Tournament, I'm bringing my gameboy advance.\n\nJust because."
+            font_size: 35
+            pos_hint: {"right": 1, "top": 0.8}
+            color: 0, 0, 0, 1
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "three"
+
+        touchInput:
+            id: touchinput
+
+<alyBio>:
+    id: atbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "alyBio"
+    FloatLayout:
+        Label:
+            text: "Alyssa Turenne"
+            color: 1, 1, 1 ,1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "allyOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.48, "top": 0.84}
+        Image:
+            source: "allyTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.85, "top": 0.84}
+
+        Label:
+            text: "Alyssa. Look, I think that it's fricking awesome that you play the guitar AND you like\nold music. Like 1970s-80s rock music. Because Vida likes Alternative music, but it's\nmostly emo, and Kavin only really knows Pink Floyd (I think). I'm going to ask my mom\nif we can order the drum set, just in case Ian's not allowed to have it :)\nLearning classical guitar is kinda fun, but nothing beats learning an awesome guitar riff.\nAlso, you'd probably beat me in tennis."
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.8}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x":0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "lastBios"
+
+        touchInput:
+            id: touchinput
+
+<mikaBio>:
+    id: mkbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "mikaBio"
+    FloatLayout:
+        Label:
+            text: "Mikayla Knestrick"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Label:
+            text: "Insert picture here..."
+            color: 1, 1, 1, 1
+            font_size: 50
+            pos_hint: {"x": 0, "y": 0.2}
+
+        Label:
+            text: "Mikayla, hello. I gotta be honest with you. I really should have done the musical\nthis year. Maybe I could’ve joined the dance team with you. Just\nkidding, that might be a little embarrassing for me. Even though I really like\ndancing. Who knows, it could’ve been fun. "
+            font_size: 40
+            pos_hint: {"right": 1, "top": 0.85}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "lastBios"
+
+        touchInput:
+            id: touchinput
+
+<davidBio>:
+    id: davidbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "davidBio"
+    FloatLayout:
+        Label:
+            text: "David Barrera"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "davidOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.48, "top": 0.84}
+        Image:
+            source: "davidTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.85, "top": 0.84}
+
+        Label:
+            text: "'David, we meet again.'\n\nI don’t know why and how we came up with that phrase, but I guess that’s how we\ngreet each other. Thank you for being my friend during the Lion King when a certain\nsomeone wasn’t talking to me. You really made the last several rehearsals a lot\nmore tolerable for me. I appreciate the interesting conversations we had during\nlunch break in the courtyard, and somedays, when I didn’t really feel like talking\nto anyone, I felt like I could talk to you.\n\n'We will meet again.'"
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.77}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "lastBios"
+
+        touchInput:
+            id: touchinput
+
+<ianBio>:
+    id: ianbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "ianBio"
+    FloatLayout:
+        Label:
+            text: "Ian Smith"
+            color: 1, 1, 1 ,1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "ianOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.57, "top": 0.84}
+        Image:
+            source: "ianTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.83, "top": 0.84}
+
+        Label:
+            text: "Ian, hello. I’m pretty sure you’re the first person I talked to who was going to \nour grade before sixth grade started. It was during Tennis camp in 2015. Since then,\nwe’ve been placed a couple classes together, and devised our master plan for academic\nsuccess. BWAHAHAHA!!! The revenge of the nerds is near!!! Just kidding. \nBut really. If we get a good grade this year, then Ms. Nawas HAS to let us…"
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.8}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "lastBios"
+
+        touchInput:
+            id: touchinput
+
+<loukaBio>:
+    id: loukabio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "loukaBio"
+    FloatLayout:
+        Label:
+            text: "Loukas Triant"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "loukaOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.57, "top": 0.84}
+        Image:
+            source: "loukaTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.83, "top": 0.84}
+
+        Label:
+            text: "Loukas Triant, what is up my boiio. Honestly, I don’t have any skit ideas right now.\nOr maybe if I spent my name meditating and doing rhythmic chants I might have\na divine revelation of skit ideas, but right now, I’m sitting on an uncomfortable\nchair making an app instead of writing something slightly more creative. Oh well."
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.85}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "lastBios"
+
+        touchInput:
+            id: touchinput
+
+<wilburBio>:
+    id: wilburbio
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "wilburBio"
+    FloatLayout:
+        Label:
+            text: "Nolan Wilbur"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "nolanOne.jpg"
+            size_hint: 0.4, 0.4
+            allow_stretch: True
+            pos_hint: {"right": 0.53, "top": 0.84}
+        Image:
+            source: "nolanTwo.jpg"
+            allow_stretch: True
+            size_hint: 0.4, 0.4
+            pos_hint: {"right": 0.87, "top": 0.84}
+
+        Label:
+            text: "Nolan, what’s good. Honestly dude, I think we’ve been friends since like the\nstart of middle school. Remember when we got busted by Mr. Pike when you\nsaid that Janie kissed someone during Outdoor Ed? And remember when Skipio\nwas talking about his 'girlfriend?' That was hilarious. We better do the play next\nsemester, alright?"
+            font_size: 38
+            pos_hint: {"right": 1, "top": 0.82}
+            color: 0, 0, 0, 1
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "lastBios"
+
+        touchInput:
+            id: touchinput
+
+<picTwo>:
+    id: picsTwo
+    canvas.before:
+        Color:
+            rgba: 0.4, 0.56, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "picTwo"
+    FloatLayout:
+        Label:
+            text: "Pictures 2"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Image:
+            source: "yoisThree.jpg"
+            allow_stretch: True
+            size_hint: 0.5, 0.5
+            pos_hint: {"x": 0.01, "y": 0.45}
+        Image:
+            source: "littlebois.jpg"
+            allow_stretch: True
+            size_hint: 0.46, 0.46
+            pos_hint: {"x": 0.528, "y": 0.469}
+        Image:
+            source: "squareUp.jpg"
+            allow_stretch: True
+            size_hint: 0.423, 0.423
+            pos_hint: {"x": 0.01, "y": 0.12}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.4, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "pics"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Next"
+            font_size: 40
+            on_release: app.root.current = "picThree"
+
+        touchInput:
+            id: touchinput
+
+<picThree>:
+    id: picsThree
+    canvas.before:
+        Color:
+            rgba: 0.4, 0.56, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "picThree"
+    FloatLayout:
+        Label:
+            text: "Pictures 3"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Label:
+            text: "Um... Work in progress."
+            font_size: 70
+            color: 1, 1, 1, 1
+            pos_hint: {"x": 0, "y": 0.2}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "picTwo"
+
+        touchInput:
+            id: touchinput
+
+<applyTwo>:
+    id: applyTwo
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "applyTwo"
+    FloatLayout:
+        Label:
+            text: "Prerequisites"
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Label:
+            text: "The following is required:\n\n1.  An expansive knowledge of at least two anime shows (Pokemon or Yu-gi-oh do\n   not count. Avatar the Last Airbender does).\n\n2. A tolerance for occasional weirdness\n\n3. Yeah, that's pretty much it."
+            color: 0, 0, 0, 1
+            font_size: 40
+            pos_hint: {"right": 1.011, "y": 0.1}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.4, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "appHome"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Next"
+            font_size: 40
+            on_release: app.root.current = "applyThree"
+
+        touchInput:
+            id: touchinput
+
+<applyThree>:
+    id: applyThree
+    canvas.before:
+        Color:
+            rgba: 0.3, 0.5, 0.7, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    name: "applyThree"
+    FloatLayout:
+        Label:
+            text: "Are you willing to..."
+            color: 1, 1, 1, 1
+            font_size: 100
+            pos_hint: {"x": 0, "y": 0.4}
+
+        Label:
+            text: "1. Attend every major social event excluding football games (dances, freshman events)\n    this is not a requirement, it's just that there's a 90 percent chance we'll all be there.\n\n2. Be pressured into joining certain clubs/teams/etc? (Almost all of us on are the robotics\n    team).\n\n3. Maybe/possibly/I don't know... Tolerate Tyler and his group? If you show that you're\n    smart, they're fun to be around sometimes... If you have any interest in their group, \n    contact Loukas Triant."
+            color: 0, 0, 0, 1
+            font_size: 37
+            pos_hint: {"right": 1.011, "y": 0.1}
+
+        Button:
+            size_hint: 0.2, 0.1
+            pos: 0, 0
+            text: "Home"
+            font_size: 40
+            on_release: app.root.current = "one"
+        Button:
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.8, "y": 0}
+            text: "Back"
+            font_size: 40
+            on_release: app.root.current = "applyTwo"
+
+        touchInput:
+            id: touchinput
